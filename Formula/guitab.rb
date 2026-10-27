@@ -1,27 +1,28 @@
 class Guitab < Formula
   desc "guitab — MNX based guitar tablature editor with broad microtonal support"
   homepage "https://github.com/johnmichaelplatter/guitab"
-  version "0.7.0"
+  version "0.7.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.0/guitab-aarch64-apple-darwin.tar.xz"
-      sha256 "36a968db2dc57231cd4b0c89f6f67c23b93e546c5abe8f0b7d4f9aaa1ba5bd57"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.1/guitab-aarch64-apple-darwin.tar.xz"
+      sha256 "a3c70a090234e10bd77bb8f06d31c6117d824bda0444378aa8e4d97fbb70667e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.0/guitab-x86_64-apple-darwin.tar.xz"
-      sha256 "51e764af53e57fbf20774124667c7dcfa84f8fbeb70585336f860d54480e360b"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.1/guitab-x86_64-apple-darwin.tar.xz"
+      sha256 "2595f714234355804b1adf77a3ad28169fa13947a14db778645acf5724d216db"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.0/guitab-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "44f3d23d9aa79030887b7a1c7a8b65e69a11f93853166d27010a8c72b012e953"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.1/guitab-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c50acacbdc086b8389ebfe4217b4af4faa00a2dc4dbf5336ea3ea7145f9b3b06"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.0/guitab-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2453ad4e07788ddf321ed6982cac00f8f6b49bad66f16430a23977c34f26a28d"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.7.1/guitab-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f2e7cbd2b3db9b384407b9543602033bd38c2687a00708a7a43906d20014d593"
     end
   end
+  license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
