@@ -1,25 +1,25 @@
 class Guitab < Formula
   desc "guitab — MNX based guitar tablature editor with broad microtonal support"
   homepage "https://github.com/johnmichaelplatter/guitab"
-  version "0.8.0"
+  version "0.8.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.0/guitab-aarch64-apple-darwin.tar.xz"
-      sha256 "49e1998d0e22ae4f3b4d6db649e0bb344c1e84f2cf70912916dd2a5ed04a11ef"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.2/guitab-aarch64-apple-darwin.tar.xz"
+      sha256 "453115456b6594304cd699bc7fced8ea2ec3678dc0519a01293c9e3cacfc9c24"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.0/guitab-x86_64-apple-darwin.tar.xz"
-      sha256 "90c6cd6833508dfea3a3b6d2ebab96fe79ad0af8c9990158256bb7f0098c72d3"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.2/guitab-x86_64-apple-darwin.tar.xz"
+      sha256 "dc9aae1f750d57a6cc05c22451982b20808febd2330116e8a790baf64ff4ea4a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.0/guitab-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "60c097514feedbeb321ecb02970d57cb8ab180bef950fe6cc31d2089a6fe5534"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.2/guitab-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b9b1dd00cd11538bb14ad5b3bff7f1bab6b957f93cbdd9a06de5e25382dc7e34"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.0/guitab-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4deb656429d48b5ef636095c8aaf801517dd4f4e62f164c26eb3388bc5db985e"
+      url "https://github.com/johnmichaelplatter/guitab/releases/download/v0.8.2/guitab-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "561b69420cce12aef56e29661866212ac4065e1528481ae5b21e9b7f7e363fa9"
     end
   end
   license "MIT"
